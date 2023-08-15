@@ -1,0 +1,12 @@
+type Task {
+	id: ID!
+	title: String
+	done: Boolean
+}
+type Query {
+	getTaskList: [Task]
+	getTask(id: ID!): Task
+}
+schema {
+	query: Query
+}
