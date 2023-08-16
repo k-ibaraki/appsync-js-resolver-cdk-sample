@@ -39,7 +39,7 @@ export class AppsyncJsResolverCdkSampleStack extends cdk.Stack {
       },
     });
 
-    // http dataSource
+    // httpデータソース
     const dataSource = api.addHttpDataSource('httpDS_IoTEvents', 'https://data.iotevents.ap-northeast-1.amazonaws.com', {
       name: 'httpDS_IoTEvents',
       description: 'http data source for IoT Events Data',
